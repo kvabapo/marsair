@@ -1,7 +1,5 @@
 import { Selector } from "testcafe";
 
-const label = Selector("label");
-
 class Page {
   constructor() {
     this.departField = Selector("#departing");
@@ -14,7 +12,7 @@ class Page {
     this.searchButton = Selector(
       "#content > form > dl:nth-child(5) > dd > input[type=submit]"
     );
-    this.submitButton = Selector("#submit-button");
+    this.backLink = Selector("#content > p:nth-child(3) > a");
 
     this.logo = Selector("#app > h1 > a");
     this.bookATicketLink = Selector("#content > form > h3");
